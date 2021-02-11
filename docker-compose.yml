@@ -1,0 +1,23 @@
+version: "3"
+services:
+  homeassistant:
+    container_name: home-assistant
+    image: homeassistant/home-assistant:2021.2.2
+    volumes:
+      - "./config:/config"
+    environment:
+      - TZ=America/Mexico_City
+    restart: always
+    network_mode: host
+  rhasspy:
+    image: "rhasspy/rhasspy:2.5.9"
+    container_name: rhasspy
+    restart: unless-stopped
+    volumes:
+        - "./rhasspy/profiles:/profiles"
+        - "/etc/localtime:/etc/localtime:ro"
+    ports:
+        - "12101:12101"
+    devices:
+        - "/dev/snd:/dev/snd"
+    command: --user-profiles /profiles --profile es

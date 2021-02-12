@@ -3,3 +3,16 @@
 
 #Rhasspy Folder
 rhasspy
+
+#Home Assistant
+config/.HA_VERSION
+config/.shopping_list.json
+config/.storage/
+config/deps/
+config/home-assistant.log
+config/home-assistant_v2.db
+config/home-assistant_v2.db-shm
+config/home-assistant_v2.db-wal
+config/known_devices.yaml
+config/secrets.yaml
+config/www/

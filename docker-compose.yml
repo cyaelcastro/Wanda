@@ -2,7 +2,7 @@ version: "3"
 services:
   homeassistant:
     container_name: home-assistant
-    image: homeassistant/home-assistant:2021.2.2
+    image: homeassistant/home-assistant:2021.8
     volumes:
       - "./config:/config"
     environment:
@@ -10,7 +10,7 @@ services:
     restart: always
     network_mode: host
   rhasspy:
-    image: "rhasspy/rhasspy:2.5.9"
+    image: "rhasspy/rhasspy:2.5.10"
     container_name: rhasspy
     restart: unless-stopped
     volumes:

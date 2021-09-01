@@ -4,7 +4,7 @@ services:
     container_name: home-assistant
     image: homeassistant/home-assistant:2021.8
     volumes:
-      - "./config:/config"
+      - "./hass/config:/config"
     environment:
       - TZ=America/Mexico_City
     restart: always

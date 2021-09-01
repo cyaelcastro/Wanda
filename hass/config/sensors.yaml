@@ -1,0 +1,5 @@
+- platform: bitcoin
+  currency: USD
+  display_options:
+    - exchangerate
+    - trade_volume_btc

@@ -5,14 +5,14 @@
 rhasspy
 
 #Home Assistant
-config/.HA_VERSION
-config/.shopping_list.json
-config/.storage/
-config/deps/
-config/home-assistant.log
-config/home-assistant_v2.db
-config/home-assistant_v2.db-shm
-config/home-assistant_v2.db-wal
-config/known_devices.yaml
-config/secrets.yaml
-config/www/
+hass/config/.HA_VERSION
+hass/config/.shopping_list.json
+hass/config/.storage/
+hass/config/deps/
+hass/config/home-assistant.log
+hass/config/home-assistant_v2.db
+hass/config/home-assistant_v2.db-shm
+hass/config/home-assistant_v2.db-wal
+hass/config/known_devices.yaml
+hass/config/secrets.yaml
+hass/config/www/

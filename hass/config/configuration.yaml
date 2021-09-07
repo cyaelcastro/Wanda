@@ -6,7 +6,6 @@ default_config:
 tts:
   - platform: google_translate
 
-<<<<<<< HEAD
 rest_command:
   bitcoin:
     url: http://192.168.15.51:12101/api/text-to-speech?play=true
@@ -17,13 +16,8 @@ rest_command:
     payload: "Un bitcoin vale {{ states('sensor.exchange_rate_1_btc') }} dólares"
 
 
-=======
->>>>>>> SessionMaterial
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
 scene: !include scenes.yaml
-<<<<<<< HEAD
 sensor: !include sensors.yaml
-=======
->>>>>>> SessionMaterial

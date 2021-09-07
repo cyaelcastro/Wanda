@@ -6,6 +6,17 @@ default_config:
 tts:
   - platform: google_translate
 
+
+rest_command:
+  temperatura:
+    url: http://192.168.15.51:12101/api/text-to-speech?play=true
+    method: POST
+    headers:
+      accept: "audio/wav"
+      content-type: "text/plain"
+    payload: "La temperatura actual es {{ state_attr('weather.casa','temperature') }} grados centigrados"
+
+
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml

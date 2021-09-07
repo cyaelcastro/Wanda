@@ -1,0 +1,10 @@
+- id: '1630553122387'
+  alias: Precio Bitcoin
+  description: 'Obtener precio del Bitcoin'
+  trigger:
+  - platform: event
+    event_type: rhasspy_Bitcoin
+  condition: []
+  action:
+  - service: rest_command.bitcoin
+  mode: single

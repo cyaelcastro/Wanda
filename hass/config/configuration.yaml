@@ -6,6 +6,16 @@ default_config:
 tts:
   - platform: google_translate
 
+rest_command:
+  bitcoin:
+    url: http://192.168.15.51:12101/api/text-to-speech?play=true
+    method: POST
+    headers:
+      accept: "audio/wav"
+      content-type: "text/plain"
+    payload: "Un bitcoin vale {{ states('sensor.exchange_rate_1_btc') }} dólares"
+
+
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml

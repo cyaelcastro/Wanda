@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 - id: '1630553122387'
   alias: Precio Bitcoin
   description: 'Obtener precio del Bitcoin'
@@ -8,3 +9,6 @@
   action:
   - service: rest_command.bitcoin
   mode: single
+=======
+[]
+>>>>>>> SessionMaterial

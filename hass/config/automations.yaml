@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 - id: '1630553122387'
   alias: Precio Bitcoin
   description: 'Obtener precio del Bitcoin'
@@ -18,4 +19,15 @@
   condition: []
   action:
   - service: rest_command.creador
+=======
+- id: '1630991114323'
+  alias: Obtener temperatura
+  description: ''
+  trigger:
+  - platform: event
+    event_type: rhasspy_Temperatura
+  condition: []
+  action:
+  - service: rest_command.temperatura
+>>>>>>> SessionMaterialWeather
   mode: single

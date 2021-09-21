@@ -8,3 +8,14 @@
   action:
   - service: rest_command.bitcoin
   mode: single
+
+- id: '1630992001394'
+  alias: Creador
+  description: 'Decir quien es el creador'
+  trigger:
+  - platform: event
+    event_type: rhasspy_Creador
+  condition: []
+  action:
+  - service: rest_command.creador
+  mode: single

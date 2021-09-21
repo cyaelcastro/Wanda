@@ -15,6 +15,13 @@ rest_command:
       content-type: "text/plain"
     payload: "Un bitcoin vale {{ states('sensor.exchange_rate_1_btc') }} dólares"
 
+  creador:
+    url: http://192.168.15.51:12101/api/text-to-speech?play=true
+    method: POST
+    headers:
+      accept: "audio/wav"
+      content-type: "text/plain"
+    payload: "Mi creador se llama {{ state_attr('person.yael','friendly_name') }}"
 
 group: !include groups.yaml
 automation: !include automations.yaml
